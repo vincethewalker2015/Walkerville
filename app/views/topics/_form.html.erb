@@ -5,25 +5,25 @@
           
            <div class="form-group">
              <div class="control-label col-md-2">
-                <%= f.label :name, class: 'labled' %> 
+                <%= f.label :blog_subject, class: 'labled' %> 
              </div>
              <div class="col-md-8">
-               <%= f.text_field :name, class: 'form-control', placeholder: "Name of topic", autofocus: true %>
+               <%= f.text_field :name, class: 'form-control', placeholder: "Subject of Blog", autofocus: true %>
              </div>
            </div>
           
           <div class="form-group">
              <div class="control-label col-md-2">
-                <%= f.label :description, class: 'labled' %> 
+                <%= f.label :blog_description, class: 'labled' %> 
              </div>
              <div class="col-md-8">
-               <%= f.text_area :description, rows: 5, class: 'form-control', placeholder: "Add topic description" %>
+               <%= f.text_area :description, rows: 5, class: 'form-control', placeholder: "Add description" %>
              </div>
            </div>
            
             <div class="form-group">
              <div class="control-label col-md-2">
-                <%= f.label :picture, class: 'labled' %> 
+                <%= f.label :upload_a_picture, class: 'labled' %> 
              </div>
              <div class="col-md-8">
                <%= f.file_field :picture, accept: 'image/jpeg, image/gif, image/png', class: 'form-control', placeholder: "Add picture here.." %>
@@ -35,7 +35,7 @@
           <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
               <%= f.submit "Creat Blog", class: "btn btn-primary bttn" %> 
-              <%= link_to "Back to Index", topics_path, class: "btn btn-warning bttn" %>
+              <%= link_to "Blog List", topics_path, class: "btn btn-warning bttn" %>
             </div>
           </div>
         
