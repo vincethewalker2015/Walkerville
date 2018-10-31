@@ -94,7 +94,7 @@ body {
 
 /* Form section */
 
-.forn-group .form-control {
+.form-group .form-control {
   background-color: transparent;
   border: 3px solid white;
   color: #fff;
@@ -104,6 +104,16 @@ body {
 .labled {
   color: white;
 }
+
+/* Change the placeholder text color */
+  .form-control::-webkit-input-placeholder { color: white; }  /* WebKit, Blink, Edge */
+  .form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
+  .form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
+  .form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
+  .form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
+
+
+
 
 /* Show Page */
 
