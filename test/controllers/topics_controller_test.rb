@@ -6,6 +6,16 @@ class TopicsControllerTest < ActionDispatch::IntegrationTest
     @topic = Topic.new(name: "first topic", description: "This is my first topic entry")
   end
   
+  test "Should Get NewTopicForm" do
+    get  new_topic_path
+    assert_response :success
+  end
+  
+  test "Should Get Topic Index" do
+    get  topics_path
+    assert_response :success
+  end
+  
   test "should get a new valid blog" do
     assert @topic.valid?
   end
