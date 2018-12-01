@@ -1,6 +1,6 @@
 class Topic < ApplicationRecord
-  validates :name, presence: true
-  validates :description, presence: true
+  validates :name, presence: true, length: {minimum: 5}
+  validates :description, presence: true, length: {maximum: 250}
   
   mount_uploader :picture, PictureUploader
   
