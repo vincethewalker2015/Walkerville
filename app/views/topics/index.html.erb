@@ -9,9 +9,9 @@
            <div align="center">
                <% @topics.each do |top| %>
              <div class="col-md-4 col-md-offset-4 well-index index-block" %>
-               <h4>Topic: <%= top.name %></h4>
+               <h4><%= top.name %></h4>
                <p align="center"><%= image_tag top.picture.url, class: "IndexSize" if top.picture? %></p>
-               <h5>Description: <%= top.description %></h5>
+               <h5><%= top.description %></h5>
                <%= link_to "View", topic_path(top), class: "btn btn-info bttn" %>
                
                   <%= link_to "Edit", edit_topic_path(top), class: "btn btn-warning bttn" %>
