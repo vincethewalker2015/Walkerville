@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Carrierwave to upload and store images
 gem 'carrierwave', '1.2.2'
 # Use ImageMagick for image editing
-gem 'mini_magick', '4.7.0'
+gem 'mini_magick', '4.9.4'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
