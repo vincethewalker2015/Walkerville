@@ -28,7 +28,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Carrierwave to upload and store images
-gem 'carrierwave', '1.2.2'
+gem 'carrierwave', '1.3.2'
 # Use ImageMagick for image editing
 gem 'mini_magick', '4.9.4'
 
